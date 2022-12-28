@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deo Online Shoping Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fa/css/font-awesome.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html"
+          ><img src="images/images/logo.png" alt="" width="125px"
+        /></a>
+      </div>
+      <nav>
+        <ul id="menuitems">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="product.html">PRODUCTS</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="account.html">ACCONUTS</a></li>
+        </ul>
+      </nav>
+      <img src="images/images/cart.png" alt="" width="30px" height="30px " />
+      <img src="images/images/menu.png" class="menu" width="28px" onclick="menutoggle()" />
+    </div>
+
+    <div class="gallery-con">
+      <div class="container">
+        <div class="col-2">
+          <div class="row">
+            <div>
+              <img
+                src="images/images/gallery-1.jpg"
+                alt=""
+                width="400px"
+                height="500px"
+              />
+              <div class="imgs">
+                <img src="images/images/buy-1.jpg" alt="" />
+                <img src="images/images/gallery-2.jpg" alt="" />
+                <img src="images/images/gallery-3.jpg" alt="" />
+                <img src="images/images/gallery-4.jpg" alt="" />
+              </div>
+            </div>
+            <!-- <img src="images/images/gallery-2.jpg" alt="" width="100px" height="200px">
+                <img src="images/images/gallery-3.jpg" alt="" width="100px" height="200px"> -->
+
+            <div class="col-2">
+              <p>Home/T-shirt</p>
+              <h1>
+                Red Printed T-shirt <br />
+                By HRX
+              </h1>
+              <p>$500.00</p>
+              <select name="select size" id="">
+                <option value="">select size</option>
+                <option value="">Xl</option>
+                <option value="">L</option>
+                <option value="">M</option>
+                <option value="">S</option>
+              </select>
+              <br />
+              <span class="sp">1</span>
+              <a href="cart.html"> <button class="btn">Add to Cart</button></a>
+
+              <br />
+              <h3>Produt Details <i class="fa fa-pencil"></i></h3>
+              <p>
+                Give your summer wardrobe a style upgrade with the HRX <br />
+                Men's active T-shirt. Team it with a pair of shorts for your
+                <br />
+                morning workout or dennis for an evening out with the guys
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="small-container">
+            <div class="row row-2">
+                <h2>Related Products</h2>
+                <a href="produt.html">View More</a>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                 <a href="gallery.html"> <img src="images/images/product-6.jpg" alt="" /></a>
+                  <h4>Red printed T-Shirt</h4>
+                  <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                  </div>
+                  <p>$50.00</p>
+                </div>
+                <div class="col-4">
+                 <a href="gallery.html"> <img src="images/images/product-2.jpg" alt="" /></a>
+
+                  <h4>Red printed T-Shirt</h4>
+                  <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                  </div>
+                  <p>$50.00</p>
+                </div>
+                <div class="col-4">
+                 <a href="gallery.html"> <img src="images/images/product-3.jpg" alt="" />
+                  <h4>Red printed T-Shirt</h4>
+                  <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                  </div>
+                  <p>$50.00</p>
+                </div>
+                <div class="col-4">
+                 <a href="gallery.html"> <img src="images/images/product-4.jpg " alt="" />
+                  <h4>Red printed T-Shirt</h4>
+                  <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                  </div>
+                  <p>$50.00</p>
+                </div>
+      
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    var menuitems = document.getElementById("menuitems");
+
+    menuitems.style.maxHeight = "0px";
+
+    function menutoggle() {
+        if (menuitems.style.maxHeight == "0px") {
+            menuitems.style.maxHeight = "200px";
+        } else {
+            menuitems.style.maxHeight = "0px";
+        }
+    }
+  </script>
+</html>
